@@ -1,0 +1,1 @@
+Of the video from FreeCodeCamp on Youtube, I took its teachings from the video and put my spin and design to the website to personalize it as my own while still learning the components of HTML, CSS, and a small bit of Javascript with the add on file of Swiper.js
