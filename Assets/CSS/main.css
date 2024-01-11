@@ -632,6 +632,8 @@ body.light-theme{
 /*Blog Posts*/
 .blog-post{
     padding-bottom: 5rem;
+    font-size: 2.3rem;
+    line-height: 5rem;
 }
 
 .blog-post-data{
@@ -648,6 +650,7 @@ body.light-theme{
 
 .blog-post-data .article-data{
     margin-bottom: 2.5rem;
+    font-size: 2rem;
 }
 
 .blog-post-data img{
@@ -672,6 +675,7 @@ body.light-theme{
 
 .quote p{
     font-style: italic;
+    font-size: 3rem;
 }
 
 .quote span i{
