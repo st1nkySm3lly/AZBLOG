@@ -1,12 +1,15 @@
 //Grab elements
 
+
 const selectElement = selector => {
     const element = document.querySelector(selector)
     if(element) return element;
     throw new Error(`Something went, make sure that ${selector} exists or is typed correctly.`);
 };
 
+
 //Nav styles on scroll
+
 
 const scrollHeader = () => {
     const headerElement = selectElement('#header');
@@ -19,31 +22,45 @@ const scrollHeader = () => {
 
 window.addEventListener('scroll', scrollHeader);
 
+
 //Open Menu & Search Pop-up
-const menuToggleIcon = selectElement('#menu-toggle-icon');
 
-const toggleMenu = () => {
-    const mobileMenu = selectElement('#menu');
-    mobileMenu.classList.toggle('activated');
-    menuToggleIcon.classList.toggle('activated');
 
-};
+// const menuToggleIcon = selectElement('#menu-toggle-icon');
 
-menuToggleIcon.addEventListener('click', toggleMenu);
+// const toggleMenu = () => {
+//     const mobileMenu = selectElement('#menu');
+//     mobileMenu.classList.toggle('activated');
+//     menuToggleIcon.classList.toggle('activated');
+
+// };
+
+// menuToggleIcon.addEventListener('click', toggleMenu);
+
+
 //Open/Close Search form popup
-const formOpenBtn = selectElement('#search-icon')
-const formCloseBtn = selectElement('#form-close-btn')
-const searchFormContainer = selectElement('#search-form-container')
 
-formOpenBtn.addEventListener('click' , () => searchFormContainer.classList.add('activated'));
 
-formCloseBtn.addEventListener('click' , () => searchFormContainer.classList.remove('activated'));
+// const formOpenBtn = selectElement('#search-icon')
+// const formCloseBtn = selectElement('#form-close-btn')
+// const searchFormContainer = selectElement('#search-form-container')
+
+// formOpenBtn.addEventListener('click' , () => searchFormContainer.classList.add('activated'));
+
+// formCloseBtn.addEventListener('click' , () => searchFormContainer.classList.remove('activated'));
+
 
 // -- Close the Seach form popup on ESC keypress
-window.addEventListener('keyup' , event => {
-    if(event.key === 'Escape') searchFormContainer.classList.remove('activated')
-});
+
+
+// window.addEventListener('keyup' , event => {
+//     if(event.key === 'Escape') searchFormContainer.classList.remove('activated')
+// });
+
+
 // Switch theme/add to local storage
+
+
 const bodyElement = document.body;
 const themeToggleBtn = selectElement('#theme-toggle-btn');
 const currentTheme = localStorage.getItem('currentTheme');
@@ -63,7 +80,10 @@ themeToggleBtn.addEventListener('click', () => {
     }
 });
 
+
 //Swiper
+
+
 const swiper = new Swiper ('.swiper' ,{
     slidesPerView: 1,
     spaceBetween: 20,
