@@ -122,6 +122,8 @@ body.light-theme{
     align-items: center;
     justify-content: space-between;
     padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 10rem;
 }
 
 .logo{
@@ -875,4 +877,45 @@ body.light-theme{
         grid-column: 1/3;
         grid-row: 2/-1;
     }
+}
+
+/* Catagories custom CSS */
+
+.catagory{
+    padding-bottom: 6rem;
+    
+}
+
+.catagory-title{
+    font-size: var(--font-size-xl);
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.popular-tags-container{
+    gap: var(--gap);
+}
+/* hover effect on articles */
+.popular-tags-container .article{
+    min-height: var(--item-min-height-sm);
+    overflow: hidden;
+}
+
+.tag-name{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--transparent-dark-color);
+    padding: 1rem 2rem;
+    z-index: 10;
+}
+
+.popular-tags-container .article:hover .tag-name{
+    color: var(--light-color);
+}
+
+.popular-tags-container .article:hover .article-image{
+    transform: scale(1.05);
 }
